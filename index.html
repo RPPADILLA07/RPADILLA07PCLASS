@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora Ingeniería Civil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <header class="calc-header">
+      <h1>Calculadora Civil</h1>
+    </header>
+
+    <main class="calc-body">
+      <aside class="calc-menu">
+  <label for="calc-select">Cálculos</label>
+  <select id="calc-select" aria-label="Selección de cálculo">
+    <option value="">-- Elige --</option>
+    <option value="beam">Resistencia de viga</option>
+    <option value="volume">Volumen de concreto</option>
+    <option value="shear">Esfuerzo cortante</option>
+    <option value="slope">Pendiente de terreno</option>
+    <option value="fs">Factor de seguridad zapata</option>
+    <option value="slab">Diseño de losa NSR-10 C.13</option>
+  </select>
+</aside>
+
+      <section class="calc-content">
+        <div id="form-container" class="form-card"></div>
+        <div id="result" class="result-card" role="region" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="calc-footer">
+      <p>Autor: Roberson Padilla</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
